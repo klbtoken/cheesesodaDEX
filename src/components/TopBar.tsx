@@ -20,7 +20,7 @@ import AppSearch from './AppSearch';
 import { getTradePageUrl } from '../utils/markets';
 
 const Wrapper = styled.div`
-  background-color: #0d1017;
+  background-color: #1a0933;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -30,7 +30,7 @@ const Wrapper = styled.div`
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  color: #2abdd2;
+  color: #ff5252;
   font-weight: bold;
   cursor: pointer;
   img {
@@ -45,7 +45,7 @@ const EXTERNAL_LINKS = {
   '/wallet-support': 'https://serum-academy.com/en/wallet-support',
   '/dex-list': 'https://serum-academy.com/en/dex-list/',
   '/developer-resources': 'https://serum-academy.com/en/developer-resources/',
-  '/explorer': 'https://explorer.solana.com',
+  '/explorer': 'https://solscan.io',
   '/srm-faq': 'https://projectserum.com/srm-faq',
   '/swap': 'https://swap.projectserum.com',
 };
@@ -142,7 +142,7 @@ export default function TopBar() {
       <Wrapper>
         <LogoWrapper onClick={() => history.push(tradePageUrl)}>
           <img src={logo} alt="" />
-          {'SERUM'}
+          {'CHEESESODA DEX'}
         </LogoWrapper>
         <Menu
           mode="horizontal"
@@ -159,37 +159,6 @@ export default function TopBar() {
           <Menu.Item key={tradePageUrl} style={{ margin: '0 10px 0 20px' }}>
             TRADE
           </Menu.Item>
-          {!searchFocussed && (
-            <Menu.Item key="/swap" style={{ margin: '0 10px' }}>
-              <a
-                href={EXTERNAL_LINKS['/swap']}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                SWAP
-              </a>
-            </Menu.Item>
-          )}
-          {connected && (!searchFocussed || location.pathname === '/balances') && (
-            <Menu.Item key="/balances" style={{ margin: '0 10px' }}>
-              BALANCES
-            </Menu.Item>
-          )}
-          {connected && (!searchFocussed || location.pathname === '/orders') && (
-            <Menu.Item key="/orders" style={{ margin: '0 10px' }}>
-              ORDERS
-            </Menu.Item>
-          )}
-          {connected && (!searchFocussed || location.pathname === '/convert') && (
-            <Menu.Item key="/convert" style={{ margin: '0 10px' }}>
-              CONVERT
-            </Menu.Item>
-          )}
-          {(!searchFocussed || location.pathname === '/list-new-market') && (
-            <Menu.Item key="/list-new-market" style={{ margin: '0 10px' }}>
-              ADD MARKET
-            </Menu.Item>
-          )}
           {!searchFocussed && (
             <Menu.SubMenu
               title="LEARN"
@@ -277,7 +246,7 @@ export default function TopBar() {
           >
             <Col>
               <PlusCircleOutlined
-                style={{ color: '#2abdd2' }}
+                style={{ color: '#ff5252' }}
                 onClick={() => setAddEndpointVisible(true)}
               />
             </Col>
@@ -288,7 +257,7 @@ export default function TopBar() {
                 title="URL"
                 trigger="hover"
               >
-                <InfoCircleOutlined style={{ color: '#2abdd2' }} />
+                <InfoCircleOutlined style={{ color: '#ff5252' }} />
               </Popover>
             </Col>
             <Col>

@@ -78,7 +78,7 @@ function TradePageInner() {
   });
 
   useEffect(() => {
-    document.title = marketName ? `${marketName} — Serum` : 'Serum';
+    document.title = marketName ? `${marketName} — cheesesodaDEX` : 'cheesesodaDEX';
   }, [marketName]);
 
   const changeOrderRef = useRef<
@@ -176,13 +176,13 @@ function TradePageInner() {
                 title="Market address"
                 trigger="click"
               >
-                <InfoCircleOutlined style={{ color: '#2abdd2' }} />
+                <InfoCircleOutlined style={{ color: '#ff5252' }} />
               </Popover>
             </Col>
           ) : null}
           <Col>
             <PlusCircleOutlined
-              style={{ color: '#2abdd2' }}
+              style={{ color: '#ff5252' }}
               onClick={() => setAddMarketVisible(true)}
             />
           </Col>
@@ -256,7 +256,7 @@ function MarketSelector({
               style={{
                 padding: '10px',
                 // @ts-ignore
-                backgroundColor: i % 2 === 0 ? 'rgb(39, 44, 61)' : null,
+                backgroundColor: i % 2 === 0 ? 'rgb(53, 18, 106)' : null,
               }}
             >
               <Row>
@@ -302,7 +302,7 @@ function MarketSelector({
               style={{
                 padding: '10px',
                 // @ts-ignore
-                backgroundColor: i % 2 === 0 ? 'rgb(39, 44, 61)' : null,
+                backgroundColor: i % 2 === 0 ? 'rgb(53, 18, 106)' : null,
               }}
             >
               {name} {deprecated ? ' (Deprecated)' : null}

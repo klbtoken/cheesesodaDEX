@@ -11,8 +11,7 @@ const footerElements = [
     link: helpUrls.developerResources,
   },
   { description: 'Discord', link: helpUrls.discord },
-  { description: 'Telegram', link: helpUrls.telegram },
-  { description: 'GitHub', link: helpUrls.github },
+  { description: 'Twitter', link: helpUrls.twitter },
   { description: 'Project Serum', link: helpUrls.projectSerum },
   { description: 'Solana Network', link: helpUrls.solanaBeach },
 ];
