@@ -30,8 +30,8 @@ const { Option } = Select;
 const { Title } = Typography;
 
 const ActionButton = styled(Button)`
-  color: #ff5252;
-  background-color: #35126a;
+  color: #03e1ff;
+  background-color: #323034;
   border-width: 0px;
 `;
 

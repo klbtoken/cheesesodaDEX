@@ -20,7 +20,7 @@ import AppSearch from './AppSearch';
 import { getTradePageUrl } from '../utils/markets';
 
 const Wrapper = styled.div`
-  background-color: #1a0933;
+  background-color: #000000;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -30,7 +30,7 @@ const Wrapper = styled.div`
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  color: #ff5252;
+  color: #03e1ff;
   font-weight: bold;
   cursor: pointer;
   img {
@@ -142,7 +142,7 @@ export default function TopBar() {
       <Wrapper>
         <LogoWrapper onClick={() => history.push(tradePageUrl)}>
           <img src={logo} alt="" />
-          {'CHEESESODA DEX'}
+          {'BLACK LABEL'}
         </LogoWrapper>
         <Menu
           mode="horizontal"
@@ -246,7 +246,7 @@ export default function TopBar() {
           >
             <Col>
               <PlusCircleOutlined
-                style={{ color: '#ff5252' }}
+                style={{ color: '#03e1ff' }}
                 onClick={() => setAddEndpointVisible(true)}
               />
             </Col>
@@ -257,7 +257,7 @@ export default function TopBar() {
                 title="URL"
                 trigger="hover"
               >
-                <InfoCircleOutlined style={{ color: '#ff5252' }} />
+                <InfoCircleOutlined style={{ color: '#03e1ff' }} />
               </Popover>
             </Col>
             <Col>
